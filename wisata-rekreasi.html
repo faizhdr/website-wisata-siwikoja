@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wisata Rekreasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+      <!-- 1. owl carousel css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- 2. Owl Carousel Theme css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animated AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+      body{
+        font-family: Raleway;
+      }
+
+      ul.navbar-nav a:hover{
+        color: #FF861A  
+        !important;
+      }
+
+      .deskripsi p{
+        text-align: justify;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container mb-3">
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <img src="img/logo.svg" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse mt-2" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mx-auto mb-lg-0">
+                  <li class="nav-item me-3">
+                      <a class="nav-link link-dark" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link active" style="color: #FF861A;" href="wisata-rekreasi.html">Wisata Rekreasi</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link link-dark" href="wisata-kuliner.html">Wisata Kuliner</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link link-dark" href="about.html">About</a>
+                  </li>
+                  </ul>
+                  <div class="text-end d-flex">
+                      <a href="login.html" class="btn btn-outline-warning me-2">Login</a>
+                      <div class="dropdown">
+                      <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Registrasi
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="regist-wisata-rekreasi.html">Wisata Rekreasi</a></li>
+                          <li><a class="dropdown-item" href="regist-wisata-kuliner.html">Wisata Kuliner</a></li>
+                      </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </nav>
+    </div>
+
+    <!-- Hero -->
+    <div class="container col-xl-10 col-xxl-10 px-4 py-5 mt-5 mb-5">
+      <div class="row align-items-center g-lg-6 py-5" >
+        <div class="col-lg-7 text-center text-lg-start" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+          <h1 class="display-5 fw-bold lh-1 mb-3" style="color: #003a91;">Yuk Jelajahi kota Jakarta Bersama <span><img src="img/logo.svg" alt=""></span></h1>
+          <p class="col-lg-10 fs-6">Sebagai ibukota Indonesia, Jakarta tak hanya terkenal akan gedung pencakar langitnya saja, tapi juga populer akan wisata Jakarta. Mulai dari wisata alam, seni, budaya, sejarah, wisata edukasi, wisata kuliner, dan pastinya wisata kekinian.</p>
+          <p class="col-lg-10 fs-6">
+            <i class='bx bxs-check-square' style='color:#FF861A'></i> Explore jakarta 
+            <span class="ps-4"><i class='bx bxs-check-square' style='color:#FF861A'></i> Keep it clean</span>
+          </p>
+        </div>
+       
+        <div class="col-md-10 mx-auto col-lg-5 mt-5" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-5">
+              <div class="carousel-item active">
+                <img src="img/card-img/dufan.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/card-img/ocean-dreams.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/card-img/tmii.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/card-img/monas.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wisata Rekreasi favorit  -->
+    <div class="container py-4">
+      <header class="pb-3 mb-4 border-bottom">
+        <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+          <span class="fs-4">Wisata Rekreasi Favorit</span>
+        </a>
+      </header>
+      
+      <!-- dufan -->
+      <div class="row align-items-center g-lg-6 py-5 bg-light rounded-4">
+        <div class="col-md-10 mx-auto col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <img src="img/card-img/dufan.jpg" class="d-block mx-lg-auto img-fluid rounded-4" width="700" height="500" loading="lazy">
+        </div>
+
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-5 fw-bold lh-1 mb-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" style="color: #003a91;">Dufan</h1>
+          <p class="col-lg-10 fs-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Dunia Fantasi adalah sebuah theme park yang terletak di kawasan Taman Impian Jaya Ancol, Jakarta Utara, Indonesia yang diresmikan dan dibuka untuk umum pada tanggal 29 Agustus 1985</p>
+          <a href="" type="button" class="text-decoration-none" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-bs-toggle="modal" data-bs-target="#myModal">
+            Detail >
+          </a>
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+          
+                <!-- Header -->
+                <div class="modal-header bg-warning">
+                  <h4 class="modal-title fw-bold">Dunia Fantasi</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- body -->
+                <div class="modal-body">
+                    <!-- Image -->
+                    <div class="row">
+                      <div class="owl-one owl-carousel">
+                        <div class="item">
+                          <div class="card border-0 shadow">
+                            <img src="img/dufan/dufan-1.jpg" alt=""  >
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                        <div class="item">
+                          <div class="card border-0 shadow">
+                            <img src="img/dufan/dufan-2.jpg" alt="" class="card-img-top ">
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                        <div class="item ">
+                          <div class="card border-0 shadow">
+                            <img src="img/dufan/dufan-3.jpg" alt="" class="card-img-top">
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                        <div class="item">
+                          <div class="card border-0 shadow">
+                            <img src="img/dufan/dufan-4.jpg" alt="" class="card-img-top">
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                      </div>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="container my-4">
+                      <div class="row ">
+                        <div class="deskripsi col-lg-7 text-center text-lg-start">
+                          <p class="fw-bold fs-5">Deskripsi Fasilitas</p>
+                          <p class="col-lg-10 ">Dufan terbagi dalam beberapa kawasan dengan tema tersendiri dan ciri khas masing-masing kawasannya. Pembagian kawasan ini ditujukan untuk membangkitkan imajinasi pengunjung yang diharapkan dapat merasakan sensasi Fantasi Keliling Dunia dan Modern Dufan Era yang dimulai dari kawasan Jakarta, Amerika, Istana Boneka, Indonesia, Eropa, Asia, Hikayat, Petualangan, Yunani, Indoor Dufan, dan Dunia Kartun.</p>
+                        </div>
+                       
+                        <div class="col-lg-5">
+                          <p class="fw-bold fs-5">Lokasi Dufan</p>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.040093251463!2d106.83134901572816!3d-6.125307061768604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1e1a80420c57%3A0x275b93253d2232e3!2sDunia%20Fantasi!5e0!3m2!1sid!2sid!4v1663578430243!5m2!1sid!2sid" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Testimoni -->
+                    <div class="row">
+                      <p class="fw-bold fs-5 text-center">Testimoni</p>
+                      <div class="owl-two owl-carousel text-center">
+                        <div class="item">
+                          <div class="card border-0 p-3">
+                            <img src="img/profile/chris-evans.jpg" class="rounded-circle w-25 my-1 mx-auto" alt="">
+                            <p class="my-1">"Keren banget websitenya bang mantap"</p>
+                            <small>- Chris Evans</small>
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                        <div class="item">
+                          <div class="card border-0 p-3">
+                            <img src="img/profile/pesulap-merah.jpg" class="rounded-circle w-25 my-1 mx-auto" alt="">
+                            <p class="my-1">"Jadi pengen ke Dufan nih"</p>
+                            <small>- Pesulap Merah</small>
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                        <div class="item ">
+                          <div class="card border-0 p-3">
+                            <img src="img/profile/bjorka.jpg" class="rounded-circle w-25 my-1 mx-auto" alt="">
+                            <p class="my-1">"Websitenya bagus dan aman dari pencurian data"</p>
+                            <small>- Bang Bjorka</small>
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row align-items-md-stretch mt-0 g-5">
+        <!-- ocean dreams -->
+        <div class="col-md-6">
+          <div class="row p-5 rounded-4 bg-light">
+            <div class="col-md-10 mx-auto col-lg-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <img src="img/card-img/ocean-dreams.jpg" class="d-block mx-lg-auto img-fluid rounded-4" width="700" height="500" loading="lazy">
+            </div>
+
+            <div class="col-lg-7 text-center text-lg-start">
+              <h1 class="display-6 fw-bold lh-1 mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" style="color: #003a91;">Ocean</h1>
+              <p class="col-lg-12 fs-6" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Taman hiburan bertema air yang menampilkan pertunjukan bawah laut, akuarium, & pentas hewan laut.</p>
+              <a href="" type="button" class="text-decoration-none" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-bs-toggle="modal" data-bs-target="#myModal2">
+                Detail >
+              </a>
+              <div class="modal fade" id="myModal2">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                  <div class="modal-content">
+              
+                    <!-- Header -->
+                    <div class="modal-header bg-warning">
+                      <h4 class="modal-title fw-bold">Ocean Dreams</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+          
+                    <!-- body -->
+                    <div class="modal-body">
+                      <!-- Image -->
+                      <div class="row">
+                        <div class="owl-one owl-carousel">
+                          <div class="item">
+                            <div class="card border-0 shadow">
+                              <img src="img/ocean-dreams/ocean-1.jpg" alt="" class="card-img-top">
+                            </div>
+                          </div>
+                          <!-- Item ends -->
+                          <div class="item">
+                            <div class="card border-0 shadow">
+                              <img src="img/ocean-dreams/ocean-2.jpg" alt="" class="card-img-top ">
+                            </div>
+                          </div>
+                          <!-- Item ends -->
+                          <div class="item ">
+                            <div class="card border-0 shadow">
+                              <img src="img/ocean-dreams/ocean-3.jpg" alt="" class="card-img-top">
+                            </div>
+                          </div>
+                          <!-- Item ends -->
+                          <div class="item">
+                            <div class="card border-0 shadow">
+                              <img src="img/ocean-dreams/ocean-4.jpg" alt="" class="card-img-top">
+                            </div>
+                          </div>
+                          <!-- Item ends -->
+                        </div>
+                      </div>
+
+                      <!-- Text -->
+                      <div class="container my-4">
+                        <div class="row ">
+                          <div class="deskripsi col-lg-7 text-center text-lg-start">
+                            <p class="fw-bold fs-5">Deskripsi Fasilitas</p>
+                            <p class="col-lg-10 ">Ditempat wisata Ocean Dream Samudra Ancol merupakan unit oceanarium terbesar dengan beragam pentas binatang laut. Selain lumba-lumba dan singa laut, ada juga pentas satwa lainnya beserta peragaannya. Termasuk juga akuarium ikan laut dan tawar, serta taman yang menjadi habitat beraneka jenis burung.</p>
+                          </div>
+                        
+                          <div class="col-lg-5">
+                            <p class="fw-bold fs-5">Lokasi Ocean Dreams</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.041882188946!2d106.83983291476868!3d-6.1250662955650474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1e3d49486f17%3A0x9670d669fa39f366!2sOcean%20Dream%20Samudra%20-%20Ancol!5e0!3m2!1sid!2sid!4v1663596419843!5m2!1sid!2sid" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Testimoni -->
+                      <div class="row">
+                        <p class="fw-bold fs-5 text-center">Testimoni</p>
+                        <div class="owl-two owl-carousel text-center">
+                          <div class="item">
+                            <div class="card border-0 p-3">
+                              <img src="img/profile/messi.jpg" class="rounded-circle w-25 my-1 mx-auto" alt="">
+                              <p class="my-1">"Pengen ke Jakarta nih, pas banget ada Siwijoka mantap"</p>
+                              <small>- Messi</small>
+                            </div>
+                          </div>
+                          <!-- Item ends -->
+                          <div class="item">
+                            <div class="card border-0 p-3">
+                              <img src="img/profile/putin.jpg" class="rounded-circle w-25 my-1 mx-auto" alt="">
+                              <p class="my-1">"Website bagus untuk Rekreasi di Jakarta"</p>
+                              <small>- Vladimir Putin</small>
+                            </div>
+                          </div>
+                          <!-- Item ends -->
+                          <div class="item ">
+                            <div class="card border-0 p-3">
+                              <img src="img/profile/jack-ma.jpg" class="rounded-circle w-25 my-1 mx-auto" alt="">
+                              <p class="my-1">"Sangat menarik untuk mengunjungi Ocean Dreams"</p>
+                              <small>- Jack Ma</small>
+                            </div>
+                          </div>
+                          <!-- Item ends -->
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keong mas -->
+        <div class="col-md-6">
+          <div class="row p-5 rounded-4 bg-light">
+            <div class="col-md-10 mx-auto col-lg-5" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+              <img src="img/card-img/tmii.jpg" class="d-block mx-lg-auto img-fluid rounded-4" width="700" height="500" loading="lazy">
+            </div>
+
+            <div class="col-lg-7 text-center text-lg-start">
+              <h1 class="display-6 fw-bold lh-1 mb-3" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" style="color: #003a91;">Keong Mas</h1>
+              <p class="col-lg-12 fs-6" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">Taman hiburan dengan wahana klasik, zona dinosaurus & film tentang legenda Jawa Keong Emas, wahana klasik</p>
+              <a href="" type="button" class="text-decoration-none" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-bs-toggle="modal" data-bs-target="#myModal3">
+                Detail >
+              </a>
+              <div class="modal fade" id="myModal3">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                  <div class="modal-content">
+              
+                <!-- Header -->
+                <div class="modal-header bg-warning">
+                  <h4 class="modal-title fw-bold">Keong Mas</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- body -->
+                <div class="modal-body">
+                    <!-- Image -->
+                    <div class="row">
+                      <div class="owl-one owl-carousel">
+                        <div class="item">
+                          <div class="card border-0 shadow">
+                            <img src="img/keong-mas/keongmas-1.jpg" alt=""  >
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                        <div class="item">
+                          <div class="card border-0 shadow">
+                            <img src="img/keong-mas/keongmas-2.png" alt="" class="card-img-top ">
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                        <div class="item ">
+                          <div class="card border-0 shadow">
+                            <img src="img/keong-mas/keongmas-3.jpg" alt="" class="card-img-top">
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                        <div class="item">
+                          <div class="card border-0 shadow">
+                            <img src="img/keong-mas/keongmas-4.jpg" alt="" class="card-img-top">
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                      </div>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="container my-4">
+                      <div class="row ">
+                        <div class="deskripsi col-lg-7 text-center text-lg-start">
+                          <p class="fw-bold fs-5">Deskripsi Fasilitas</p>
+                          <p class="col-lg-10 ">Pengunjung bisa menikmati berbagai wahana dan permainan yang sangat menarik di tempat wisata di Indonesia ini, seperti Petualangan Dinosaurus, Mata Legenda, Nirwata Kisar, Kapal Bajak Laut, Mobil Tanjak, Kereta Beos, Ulat Selur, hingga permainan air untuk anak-anak.</p>
+                        </div>
+                       
+                        <div class="col-lg-5">
+                          <p class="fw-bold fs-5">Lokasi Keong Mas</p>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3965.6918846293524!2d106.8901605!3d-6.304153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed5cc064937b%3A0xf00c5e910ce3350!2sTaman%20Legenda%20Keong%20Emas!5e0!3m2!1sid!2sid!4v1663597605641!5m2!1sid!2sid" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Testimoni -->
+                    <div class="row">
+                      <p class="fw-bold fs-5 text-center">Testimoni</p>
+                      <div class="owl-two owl-carousel text-center">
+                        <div class="item">
+                          <div class="card border-0 p-3">
+                            <img src="img/profile/jack-ma.jpg" class="rounded-circle w-25 my-1 mx-auto" alt="">
+                            <p class="my-1">"Mudah mencari lokasi wisata di Siwijoka"</p>
+                            <small>- Jack Ma</small>
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                        <div class="item">
+                          <div class="card border-0 p-3">
+                            <img src="img/profile/pesulap-merah.jpg" class="rounded-circle w-25 my-1 mx-auto" alt="">
+                            <p class="my-1">"Banyak banget Wisata keren di Jakarta mantap"</p>
+                            <small>- Pesulap Merah</small>
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                        <div class="item ">
+                          <div class="card border-0 p-3">
+                            <img src="img/profile/putin.jpg" class="rounded-circle w-25 my-1 mx-auto" alt="">
+                            <p class="my-1">"Jakarta Wisatanya bagus2 gokil"</p>
+                            <small>- Vladimir Putin</small>
+                          </div>
+                        </div>
+                        <!-- Item ends -->
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="container px-4 py-5 mt-5 mb-5" id="custom-cards">
+      <h2 class="pb-2 text-center">Gallery Wisata Jakarta</h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTYZZrqIdYGlgT3rzzGPlS4TY3XmP1hWnSxNPRCfxRYCSm6_p1k21Y9SFeYCPoYfmI-idKucsiJWi7ZRt8iHQr6w');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white">Monumen Nasional</p>
+              </div>
+          </div>
+          </div>
+  
+          <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRXAvr9q0AVezbEd9nob1lyOEAw1_cZZ1S_0IqC4z0w6qtn4TwzbjxQr2daY1VE75iCtdJkfN7rzZnCmxKa3GPR3A');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white">Masjid Istiqlal</p>
+              </div>
+          </div>
+          </div>
+  
+          <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRVd6hZsc0Eb9eGc0ClimWGVKaeZ-pONU03qbellAyh_EslLWsmgjcRGWWCb9c6PWTdJm2OfV7WxBOjQrzNGpRhzA');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white">Ragunan</p>
+              </div>
+          </div>
+          </div>
+  
+          <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQes7H6VCWAl2exa6aa0xbrxwJ-VW4NWSusRYV1omoIZz7YUVl61HCan9r0YvWRYawDT_QheXUy7DPzqik6bBCg2A');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white">Museum Nasional</p>
+              </div>
+          </div>
+          </div>
+          
+          <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxNC6Z4haPJj9FqHb4WG3D1XNtUpcdgKxvt9Z3orGR308dJ5Ioksg6T1p_T027L-k-fPd_hEGt-W1oGmxa1oEoRg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white">Taman Suropati</p>
+              </div>
+          </div>
+          </div>
+  
+          <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR_uJN3ZMQkzw2RyfY2wWqjzeMrn50f8OKcZwDfY6e2oFoRiUoHQC2CZ6D6lZbLxww8bh4MsBoLC4KLrvFrQBhNxg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white">Museum Sejarah Jakarta</p>
+              </div>
+          </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="wisata-rekreasi.html" class="nav-link px-2 text-muted">Wisata Rekreasi</a></li>
+          <li class="nav-item"><a href="wisata-kuliner.html" class="nav-link px-2 text-muted">Wisata Kuliner</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 Kelompok-Satu-Spekta</p>
+      </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- Animated AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- cdn file -->
+
+    <!-- 0. Owl Carosel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- 1. Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <!-- Init Owl Carousel -->
+      <script>
+        $('.owl-one').owlCarousel({
+            loop:true,
+            margin:10,
+            dots:false,
+            nav:false,
+            autoplay:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+
+        $('.owl-two').owlCarousel({
+            loop:true,
+            margin:10,
+            dots:false,
+            nav:false,
+            autoplay:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+      </script>
+    
+  </body>
+</html>
